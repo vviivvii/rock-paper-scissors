@@ -13,8 +13,10 @@ void setup() {
 
 void draw() {
   quitButtonDraw();
+  UserDraw();
 }
 
 void mouseClicked() {
   quitButtonMouseClicked();
+  userPlayedDraw();
 }
