@@ -8,15 +8,17 @@ import ddf.minim.ugens.*;
 void setup() {
   size (900, 700);
   UserGUISetup();
+  NPCCodeSetup();
 }
 
 
 void draw() {
   quitButtonDraw();
   UserDraw();
+  NPCCodeDraw();
 }
 
 void mouseClicked() {
   quitButtonMouseClicked();
-  userPlayedDraw();
+  userPlayedMouseClicked();
 }

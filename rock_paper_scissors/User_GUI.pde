@@ -15,4 +15,5 @@ void UserGUISetup () {
   scissors= loadImage("download.png");
   rect(width*11.5/16, height*12/16, width*2.5/16, width*1.5/16); //scissors
   image(scissors, width*11.5/16, height*12/16, width*2.5/16, width*1.5/16);
+  
 }

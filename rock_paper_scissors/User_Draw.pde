@@ -14,7 +14,7 @@ void UserDraw () {
     rect(width*2.5/16, height*12/16, width*2.5/16, width*1.5/16);
     image(rock, width*2.5/16, height*12/16, width*2.5/16, width*1.5/16);
   }
-
+  
   //---------------------------------paper-------------------------------------
   if (mouseX>width*6.5/15 && mouseX<width*8.9/15 && mouseY>height*18.7/25 && mouseY<height*18.2/21) {
     fill(hoverOverButton2);
