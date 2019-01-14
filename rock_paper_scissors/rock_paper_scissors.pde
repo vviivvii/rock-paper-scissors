@@ -16,6 +16,7 @@ void draw() {
   quitButtonDraw();
   UserDraw();
   NPCCodeDraw();
+  WinorLose();
 }
 
 void mouseClicked() {
