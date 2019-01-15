@@ -2,10 +2,10 @@ Boolean Playerpicked = false;
 Boolean NPCpicked = false;
 Boolean Endgame = false;
 int NPC = int(random(3));
-//int NPC = 2; test
-int a = 49;
-int b = 50;
-int c = 51;
+//int NPC = 1; //Test
+int a = 0;
+int b = 1;
+int c = 2;
 
 void NPCCodeSetup () {
   rect(width*7/16, height*4.2/16, width*2.5/16, width*1.5/16);
