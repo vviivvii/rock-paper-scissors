@@ -2,7 +2,7 @@ Boolean Playerpicked = false;
 Boolean NPCpicked = false;
 Boolean Endgame = false;
 int NPC = int(random(3));
-//int NPC = 1; //Test
+//int NPC = 2; //Test
 int a = 0;
 int b = 1;
 int c = 2;
@@ -11,8 +11,28 @@ void NPCCodeSetup () {
   rect(width*7/16, height*4.2/16, width*2.5/16, width*1.5/16);
 }
 
+void reset () {
+  int NPCreset = int(random(3));
+  //println(NPCreset);
+  println("User have won " + Userwon + " time");
+  println("NPC have won " + NPCwon + " time");
+  rect(width*7/16, height*4.2/16, width*2.5/16, width*1.5/16);
+  if (NPCreset == a) {
+    NPC = (0);
+    println("a"+NPC);
+  }
+  if (NPCreset == b) {
+    NPC = (1);
+    println("b"+NPC);
+  }
+  if (NPCreset == c) {
+    NPC = (2);
+    println("c"+NPC);
+  }
+}
+
+
 void NPCCodeDraw () {
-  
   if (Playerpicked == true)    
     if ( NPC <= a ) {
       println("NPC played rock");
@@ -20,11 +40,11 @@ void NPCCodeDraw () {
       Playerpicked = false;
       NPCpicked = true;
       Endgame = true;
-    }else {
+    } else {
       //println("skip");
     }
-    
-  
+
+
   if (Playerpicked == true)    
     if ( NPC <= b) {
       println("NPC played paper");
@@ -32,11 +52,11 @@ void NPCCodeDraw () {
       Playerpicked = false;
       NPCpicked = true;
       Endgame = true;
-    }else{ 
+    } else { 
       //println("skip");
     } 
-    
-  
+
+
   if (Playerpicked == true)    
     if ( NPC >= c ) {
       println("NPC played scissors");
@@ -45,11 +65,4 @@ void NPCCodeDraw () {
       NPCpicked = true;
       Endgame = true;
     } 
-  /*
-  if (NPCpicked == false) {
-    NPC = int(random(3));
-    Endgame = true;
-    
-    }
-    */
 }

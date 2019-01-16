@@ -7,8 +7,10 @@ import ddf.minim.ugens.*;
 
 void setup() {
   size (900, 700);
+  reset();
   UserGUISetup();
   NPCCodeSetup();
+  resetGUI();
 }
 
 
@@ -22,4 +24,5 @@ void draw() {
 void mouseClicked() {
   quitButtonMouseClicked();
   userPlayedMouseClicked();
+  resetmouseClicked();
 }
