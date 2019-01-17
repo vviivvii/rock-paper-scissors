@@ -11,6 +11,7 @@ void setup() {
   UserGUISetup();
   NPCCodeSetup();
   resetGUI();
+  scoreboard();
 }
 
 

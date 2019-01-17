@@ -19,15 +19,15 @@ void reset () {
   rect(width*7/16, height*4.2/16, width*2.5/16, width*1.5/16);
   if (NPCreset == a) {
     NPC = (0);
-    println("a"+NPC);
+    //println("a"+NPC);  /For testing
   }
   if (NPCreset == b) {
     NPC = (1);
-    println("b"+NPC);
+    //println("b"+NPC);  /For testing
   }
   if (NPCreset == c) {
     NPC = (2);
-    println("c"+NPC);
+    //println("c"+NPC);  /For testing
   }
 }
 
