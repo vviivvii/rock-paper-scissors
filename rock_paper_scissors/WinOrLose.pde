@@ -30,14 +30,12 @@ void WinorLose () {
     }
   }
 
-
   if (scissor == true || Endgame == true) {
     println (playerplayed);
     println(NPC);
     if ( NPC > playerplayed) {
       println("NPC win ");
-      NPCwinSoundEffect1.play();
-      NPCwinSoundEffect1.rewind();
+      NPCsoundeffect();
       NPCwon++;
       scissor = false;
       NPCscissor = false;
@@ -45,8 +43,7 @@ void WinorLose () {
       playerplayed = (0);
       Endgame = false;
     } else if ( NPC == playerplayed) {
-      TieSoundEffect1.play();
-      TieSoundEffect1.rewind();
+      Usersoundeffect();
       print("tie ");
       ties++;
       scissor = false;
@@ -55,8 +52,7 @@ void WinorLose () {
       playerplayed = (0);
       Endgame = false;
     } else {
-      UserwinSoundEffect1.play();
-      UserwinSoundEffect1.rewind();
+      Usersoundeffect();
       print("You win ");
       Userwon++;
       scissor = false;
