@@ -36,8 +36,8 @@ void WinorLose () {
     println(NPC);
     if ( NPC > playerplayed) {
       println("NPC win ");
-       NPCwinSoundEffect1.play();
-       NPCwinSoundEffect1.rewind();
+      NPCwinSoundEffect1.play();
+      NPCwinSoundEffect1.rewind();
       NPCwon++;
       scissor = false;
       NPCscissor = false;
@@ -45,6 +45,8 @@ void WinorLose () {
       playerplayed = (0);
       Endgame = false;
     } else if ( NPC == playerplayed) {
+      TieSoundEffect1.play();
+      TieSoundEffect1.rewind();
       print("tie ");
       ties++;
       scissor = false;
@@ -53,6 +55,8 @@ void WinorLose () {
       playerplayed = (0);
       Endgame = false;
     } else {
+      UserwinSoundEffect1.play();
+      UserwinSoundEffect1.rewind();
       print("You win ");
       Userwon++;
       scissor = false;
@@ -79,8 +83,8 @@ void resetmouseClicked() {
 
 void scoreboard() {
   fill(255);
-  rect(width*13.5/16,height*6/16, width*2/16, width*1.5/16);
-  rect(width*13.8/16 - width*0.11/36,height*7.9/16, width*1.5/16,width*0.6/16);
+  rect(width*13.5/16, height*6/16, width*2/16, width*1.5/16);
+  rect(width*13.8/16 - width*0.11/36, height*7.9/16, width*1.5/16, width*0.6/16);
   fill(0);
   text("You", width*14.8/16, height*6.8/16);
   text(Userwon, width*15/16, height*7.4/16);
