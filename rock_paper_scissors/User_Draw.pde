@@ -49,4 +49,9 @@ void UserDraw () {
     text("play again", width*2.3/16, height*7.3/16);
     fill(255);
   }
+  /*
+  if (mouseX>width*14.9/15 && mouseX<width*14.9/15 && mouseY>height*24.9/25 && mouseY<height*20.9/21) {
+    
+  }
+  */
 }

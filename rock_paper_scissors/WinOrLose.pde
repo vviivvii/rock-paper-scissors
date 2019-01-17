@@ -36,6 +36,8 @@ void WinorLose () {
     println(NPC);
     if ( NPC > playerplayed) {
       println("NPC win ");
+       NPCwinSoundEffect1.play();
+       NPCwinSoundEffect1.rewind();
       NPCwon++;
       scissor = false;
       NPCscissor = false;
