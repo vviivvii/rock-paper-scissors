@@ -54,14 +54,22 @@ void UserDraw () {
 
 void Usersoundeffect() {
   int Usersoundeffect = int(random(2));
-  println(Usersoundeffect);
+  //println(Usersoundeffect);
   if (scissor == true)
     if (Usersoundeffect == a) {
-      TieSoundEffect1.play();
+      TieSoundEffect1.pause();
       TieSoundEffect1.rewind();
+      TieSoundEffect2.pause();
+      TieSoundEffect2.rewind();
+      UserwinSoundEffect1.play();
+      UserwinSoundEffect1.rewind();
     }
   if (Usersoundeffect == b) {
-    TieSoundEffect2.play();
+    TieSoundEffect1.pause();
+    TieSoundEffect1.rewind();
+    TieSoundEffect2.pause();
     TieSoundEffect2.rewind();
+    UserwinSoundEffect2.play();
+    UserwinSoundEffect2.rewind();
   }
 }

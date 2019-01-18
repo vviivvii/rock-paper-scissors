@@ -11,14 +11,26 @@ void NPCsoundeffect() {
   int NPCsoundeffect = int(random(3));
   if (scissor == true) 
     if ( NPCsoundeffect == a) {
+      TieSoundEffect1.pause();
+      TieSoundEffect1.rewind();
+      TieSoundEffect2.pause();
+      TieSoundEffect2.rewind();
       NPCwinSoundEffect1.play();
       NPCwinSoundEffect1.rewind();
     }
   if (NPCsoundeffect == b) {
+    TieSoundEffect1.pause();
+    TieSoundEffect1.rewind();
+    TieSoundEffect2.pause();
+    TieSoundEffect2.rewind();
     NPCwinSoundEffect2.play();
     NPCwinSoundEffect2.rewind();
   }
   if ( NPCsoundeffect == c) {
+    TieSoundEffect1.pause();
+    TieSoundEffect1.rewind();
+    TieSoundEffect2.pause();
+    TieSoundEffect2.rewind();
     NPCwinSoundEffect3.play();
     NPCwinSoundEffect3.rewind();
   }

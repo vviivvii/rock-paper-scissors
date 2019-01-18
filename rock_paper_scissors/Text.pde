@@ -10,13 +10,18 @@ void text() {
 
 void Tiesoundeffect() {
   int Tiesoundeffect = int(random(2));
+  //println(Tiesoundeffect);
   if (scissor == true)
     if (Tiesoundeffect == a) {
-      UserwinSoundEffect1.play();
-      UserwinSoundEffect1.rewind();
+      TieSoundEffect2.pause();
+      TieSoundEffect2.rewind();
+      TieSoundEffect1.play();
+      TieSoundEffect1.rewind();
     }
   if (Tiesoundeffect == b) {
-    UserwinSoundEffect2.play();
-    UserwinSoundEffect2.rewind();
+    TieSoundEffect1.pause();
+    TieSoundEffect1.rewind();
+    TieSoundEffect2.play();
+    TieSoundEffect2.rewind();
   }
 }

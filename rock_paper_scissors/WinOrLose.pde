@@ -31,8 +31,8 @@ void WinorLose () {
   }
 
   if (scissor == true || Endgame == true) {
-    println (playerplayed);
-    println(NPC);
+    //println (playerplayed); //Testing
+    //println(NPC); //Testing
     if ( NPC > playerplayed) {
       println("NPC win ");
       NPCsoundeffect();
@@ -43,7 +43,7 @@ void WinorLose () {
       playerplayed = (0);
       Endgame = false;
     } else if ( NPC == playerplayed) {
-      Usersoundeffect();
+      Tiesoundeffect();
       print("tie ");
       ties++;
       scissor = false;
