@@ -51,3 +51,6 @@ void mouseClicked() {
   userPlayedMouseClicked();
   resetmouseClicked();
 }
+
+//----------------Bugs-----------------
+//When sound effects does not play.
